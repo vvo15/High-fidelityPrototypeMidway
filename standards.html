@@ -19,6 +19,7 @@
     </main>
 
     <script src="navbar.js"></script>
+    <script src="navbar.js"></script>
     <script>
       fetch("data.json")
         .then(function (res) {
@@ -30,34 +31,26 @@
 
           standards.forEach(function (s) {
             var card = document.createElement("div");
-            card.className = "card standard-card";
+            // same base card style as class topics
+            card.className = "card";
 
-            if (s.image) {
-              var img = document.createElement("img");
-              img.src = s.image;
-              img.alt = s.title;
-              img.className = "card-image";
-              card.appendChild(img);
-            }
+            card.innerHTML =
+              "<h3>" +
+              s.title +
+              "</h3>" +
+              "<p>" +
+              s.description +
+              "</p>" +
+              '<button class="btn ghost standards-btn">' +
+              (s.buttonLabel || "Access the Standards") +
+              "</button>";
 
-            var h3 = document.createElement("h3");
-            h3.textContent = s.title;
-            card.appendChild(h3);
-
-            var p = document.createElement("p");
-            p.textContent = s.description;
-            card.appendChild(p);
-
-            var btn = document.createElement("button");
-            btn.textContent = s.buttonLabel || "View";
-            btn.className = "btn secondary";
-
-            btn.addEventListener("click", function () {
-              window.location.href =
-                "standardDetail.html?standard=" + encodeURIComponent(s.id);
-            });
-
-            card.appendChild(btn);
+            card
+              .querySelector(".standards-btn")
+              .addEventListener("click", function () {
+                window.location.href =
+                  "standardDetail.html?standard=" + encodeURIComponent(s.id);
+              });
 
             container.appendChild(card);
           });

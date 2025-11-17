@@ -6,45 +6,126 @@
   "standards": [
     {
       "id": "acct",
-      "title": "ACCT",
+      "title": "ACCT and BSA General Standards",
       "description": "The standards made by the Association for Challenge Course Technology.",
       "buttonLabel": "Access the Standards",
-      "link": "#"
+      "resources": [
+        {
+          "label": "ACCT Standard V8",
+          "url": "https://drive.google.com/open?id=112hf9iQ1I9CccoPlXJfbX5NW9q62Tnvw"
+        },
+        {
+          "label": "BSA Age Appropriate Guidelines Chart",
+          "url": "https://filestore.scouting.org/filestore/HealthSafety/pdf/680-685.pdf"
+        },
+        {
+          "label": "BSA Belay On",
+          "url": "https://filestore.scouting.org/filestore/Outdoor%20Program/pdf/430-500_BelayOn_WB.pdf"
+        },
+        {
+          "label": "BSA Climb on Safely",
+          "url": "https://www.scouting.org/outdoor-programs/cope/climb-on-safely/"
+        },
+        {
+          "label": "BSA Guide to Safe Scouting",
+          "url": "https://www.scouting.org/health-and-safety/gss/toc/"
+        },
+        {
+          "label": "BSA NCAP National Camp Standards",
+          "url": "https://www.scouting.org/wp-content/uploads/2024/10/430-05625-NCAP_WEB.pdf"
+        },
+        {
+          "label": "BSA Rules and Regulations",
+          "url": "https://www.scouting.org/wp-content/uploads/2024/12/2024-Rules_Regulations_May-2024.pdf"
+        },
+        {
+          "label": "BSA Project COPE Manual (Superseded by Belay On)",
+          "url": "https://drive.google.com/file/d/1HHNCDdVjgteNZXTtqrFxd78ofe5oNMYK/view?usp=sharing"
+        }
+      ]
     },
     {
-      "id": "age_guidelines",
-      "title": "Age Appropriate Guidelines",
+      "id": "operations_guides",
+      "title": "Operations Guides",
       "description": "Age restrictions for all Scout activities including ice climbing, belaying, top rope and bouldering.",
       "buttonLabel": "Access the Standards",
-      "link": "#"
+      "link": "#",
+      "resources": [
+        {
+          "label": "New England Base Camp Sayre Hi Ropes",
+          "url": "https://docs.google.com/document/d/1tudOZFOUZYz0ONl9Bs4fP-tmB3CEb578Xk3Xkb6U6QA/edit?usp=sharing"
+        },
+        {
+          "label": "New England Base Camp Sayre Lookout Rock",
+          "url": "https://drive.google.com/file/d/1CnVudcFJdoA5VuFNg7V5BrAKofM4kA0p/view?usp=sharing"
+        }
+      ]
     },
     {
-      "id": "ncap",
-      "title": "NCAP",
+      "id": "standard_operating_procedures",
+      "title": "Standard Operating Procedures",
       "description": "National Camp Accreditation Program standards created for council and summer camp events.",
       "buttonLabel": "Access the Standards",
-      "link": "#"
+      "link": "#",
+      "resources": [
+        {
+          "label": "Instructor Rescue Kits",
+          "url": "https://docs.google.com/document/d/e/2PACX-1vTuIcQrPcAXKSPa1g2X5pj-NdKfV_jEK6Rp0y5l7zS4_xiTQGdSSyfaI9fgXQB6l6EaNl2x5oembmB8/pub"
+        },
+        {
+          "label": "Tethers - DRAFT",
+          "url": "https://docs.google.com/document/d/e/2PACX-1vTiP-i5umuOQYJHP5za4uAUvXjo-cA2TNxsv-AgUC2WpIgfSrvxU5JdEIg3qk-l6zRSVJ44wfA59IFt/pub"
+        },
+        {
+          "label": "Ground Anchors - DRAFT",
+          "url": "https://docs.google.com/document/d/e/2PACX-1vR5Reh1cL0rqOsD-jtBXY4s0g-C4-pQF8GC2DPnEz2ElHgef1yaV9zT4__urSi7Okcmtn7lQT5A8Or4/pub"
+        }
+      ]
     },
     {
-      "id": "guide_safe_scouting",
-      "title": "Guide to Safe Scouting",
+      "id": "technical_notes",
+      "title": "Technical Notes",
       "description": "The standards made by Scouts BSA for all BSA events.",
       "buttonLabel": "Access the Standards",
-      "link": "https://www.scouting.org/health-and-safety/gss/"
+      "link": "",
+      "resources": [
+        {
+          "label": "Scaffold Knot - DRAFT",
+          "url": "https://docs.google.com/document/d/e/2PACX-1vTlsK1Z9t037KwumZ_bmwH2ao2c4PbrxW_nGTigsKLg3Z-3OGr65d50T5RKc6dRBYNj8aAFP5QieZzw/pub"
+        }
+      ]
     },
     {
       "id": "bsa_rules",
       "title": "BSA Rules and Regulations",
       "description": "Rules and regulations for BSA programs and activities.",
       "buttonLabel": "Access the Standards",
-      "link": "#"
+      "link": ""
     },
     {
       "id": "climb_on_safely",
       "title": "Training Courses",
       "description": "Login to access the guidelines and best practices for running safe climbing programs.",
       "buttonLabel": "Access the Standards",
-      "link": "https://my.scouting.org/"
+      "link": "",
+      "resources": [
+        {
+          "label": "BSA Climb on Safely",
+          "url": "https://my.scouting.org/"
+        },
+        {
+          "label": "BSA Safeguarding Youth Training",
+          "url": "https://my.scouting.org/"
+        },
+        {
+          "label": "BSA Hazardous Weather",
+          "url": "https://my.scouting.org/"
+        },
+        {
+          "label": "",
+          "url": ""
+        }
+      ]
     }
   ],
   "topics": [
