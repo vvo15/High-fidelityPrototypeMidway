@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>COPE & Climbing Instructor Training</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-nav"></header>
+
+    <main class="container">
+      <section class="hero">
+        <h1 id="site-title">COPE & Climbing Instructor Training</h1>
+        <p id="site-tagline" class="section-lead">
+          Explore and learn the principles and techniques required for safe
+          climbing and COPE activities operating under BSA policies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="standards.html" class="btn">View Standards</a>
+          <a href="classTopics.html" class="btn ghost">Browse Class Topics</a>
+          <a href="exam.html" class="btn ghost">Exam</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script>
+      fetch("data.json")
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          if (data.site) {
+            var t = document.getElementById("site-title");
+            var tag = document.getElementById("site-tagline");
+            if (t) t.textContent = data.site.title;
+            if (tag) tag.textContent = data.site.tagline;
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exam – COPE & Climbing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-nav"></header>
+
+    <main class="container">
+      <h1 id="exam-title">Exam</h1>
+      <p id="exam-intro" class="section-lead"></p>
+      <p id="exam-note" class="exam-note"></p>
+
+      <form id="exam-form" class="exam-form">
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script>
+      fetch("data.json")
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          var exam = data.exam || {};
+          var titleEl = document.getElementById("exam-title");
+          var introEl = document.getElementById("exam-intro");
+          var noteEl = document.getElementById("exam-note");
+          var formEl = document.getElementById("exam-form");
+
+          if (exam.title) titleEl.textContent = exam.title;
+          if (exam.intro) introEl.textContent = exam.intro;
+          if (exam.note) noteEl.textContent = exam.note;
+
+          var questions = exam.questions || [];
+          var submitBtn = formEl.querySelector('button[type="submit"]');
+
+          questions.forEach(function (q) {
+            var wrapper = document.createElement("div");
+            wrapper.className = "exam-question";
+
+            wrapper.innerHTML =
+              "<label>" +
+              '<span class="exam-label">' +
+              (q.label || "") +
+              "</span>" +
+              '<span class="exam-prompt">' +
+              (q.prompt || "") +
+              "</span>" +
+              "</label>" +
+              '<input type="text" name="q' +
+              q.id +
+              '" placeholder="' +
+              (q.inputPlaceholder || "") +
+              '">';
+
+            formEl.insertBefore(wrapper, submitBtn);
+          });
+
+          formEl.addEventListener("submit", function (evt) {
+            evt.preventDefault();
+            alert(
+              "Your answers have been recorded. Use the site resources to check your understanding."
+            );
+          });
+        });
+    </script>
+  </body>
+</html>

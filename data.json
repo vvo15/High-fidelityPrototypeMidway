@@ -1,0 +1,898 @@
+{
+  "site": {
+    "title": "BSA COPE & Climbing Instructor Training",
+    "tagline": "Explore and learn the principles and techniques required for safe climbing and COPE activities operating under BSA policies."
+  },
+  "standards": [
+    {
+      "id": "acct",
+      "title": "ACCT",
+      "description": "The standards made by the Association for Challenge Course Technology.",
+      "buttonLabel": "Access the Standards",
+      "link": "#"
+    },
+    {
+      "id": "age_guidelines",
+      "title": "Age Appropriate Guidelines",
+      "description": "Age restrictions for all Scout activities including ice climbing, belaying, top rope and bouldering.",
+      "buttonLabel": "Access the Standards",
+      "link": "#"
+    },
+    {
+      "id": "ncap",
+      "title": "NCAP",
+      "description": "National Camp Accreditation Program standards created for council and summer camp events.",
+      "buttonLabel": "Access the Standards",
+      "link": "#"
+    },
+    {
+      "id": "guide_safe_scouting",
+      "title": "Guide to Safe Scouting",
+      "description": "The standards made by Scouts BSA for all BSA events.",
+      "buttonLabel": "Access the Standards",
+      "link": "https://www.scouting.org/health-and-safety/gss/"
+    },
+    {
+      "id": "bsa_rules",
+      "title": "BSA Rules and Regulations",
+      "description": "Rules and regulations for BSA programs and activities.",
+      "buttonLabel": "Access the Standards",
+      "link": "#"
+    },
+    {
+      "id": "climb_on_safely",
+      "title": "Training Courses",
+      "description": "Login to access the guidelines and best practices for running safe climbing programs.",
+      "buttonLabel": "Access the Standards",
+      "link": "https://my.scouting.org/"
+    }
+  ],
+  "topics": [
+    {
+      "id": "anchors",
+      "title": "Anchors",
+      "description": "Principles of building safe anchors including using acronyms such as EARNEST.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [
+        "Spring 2025 course",
+        "Spring 2024 course",
+        "Spring 2023 course",
+        "Spring 2021 course"
+      ],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2025 course",
+          "url": "https://docs.google.com/document/d/1vCN2kzTGV3yl_iPCvnBRqH06qopI9J7mi6LOpSHSbPc/edit?tab=t.0#heading=h.b6e7osk87xoz"
+        },
+        {
+          "label": "Spring 2024 course",
+
+          "url": "https://docs.google.com/document/d/1y4dmPUTRLf8F-nRAbH3nj_gmK1YKd5sck9Q-ZIGCRAY/edit?tab=t.0#heading=h.b6e7osk87xoz"
+        },
+        {
+          "label": "Spring 2023 course",
+
+          "url": "https://docs.google.com/document/d/1rhhsJLZNv0qPV_1fVRIrJgxuXzZH1ck6r4ewd7BOVXQ/edit?tab=t.0#heading=h.b6e7osk87xoz"
+        },
+        {
+          "label": "Spring 2021 course",
+
+          "url": "https://drive.google.com/file/d/1y3XUQznk8osVz_7GAz0j6_th3KOuJi0z/view"
+        },
+        {
+          "label": "Spring 2019 course",
+
+          "url": "https://docs.google.com/document/d/18EL3M52w3KKSwKaqPpswK08TqhhgYKAFmIZjw1ZHUig/edit?tab=t.0#heading=h.b6e7osk87xoz"
+        },
+        {
+          "label": "Spring 2018 course",
+
+          "url": "https://drive.google.com/file/d/15SZt5IWNg1leW63U6cqTY8mlv07PwwXx/view"
+        },
+        {
+          "label": "Spring 2017, Spring 2018 courses",
+
+          "url": "https://drive.google.com/file/d/1MJng-XeHn0l_sqIGTHyBS_G5_GaFergl/view"
+        },
+        {
+          "label": "Winter 2013 course",
+
+          "url": "https://docs.google.com/document/d/13VFB_56yzp1G83vaBrGbBIxr50RYuNtui4kE1TQmJjE/pub"
+        },
+        {
+          "label": "Winter 2013 course",
+
+          "url": "https://docs.google.com/document/d/1Z5i2JraDe5rAv0_9ydp9ietDKX2NqiAav_q7pWhY8Z4/pub"
+        },
+        {
+          "label": "Great pictures and diagrams",
+
+          "url": "http://www.rescuedynamics.ca/articles/pdfs/EarnestAnchors3.pdf"
+        },
+        {
+          "label": "climbingtechniques.org",
+
+          "url": "http://www.climbingtechniques.org/basic-principles-of-climbing-anchors.html"
+        },
+        {
+          "label": "Chockstone.org",
+
+          "url": "http://www.chockstone.org/TechTips/Equalise.htm"
+        },
+        {
+          "label": "Climbingtechniques.org",
+
+          "url": "http://www.climbingtechniques.org/setting-a-traditional-anchor.html"
+        },
+        {
+          "label": "Climbingtechniques.org",
+
+          "url": "http://www.climbingtechniques.org/using-natural-protection.html"
+        }
+      ]
+    },
+    {
+      "id": "artificial_protection",
+      "title": "Artificial Protection",
+      "description": "The use of cams, nuts and other pieces of artificial protection to build reliable climbing anchors.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": ["Spring 2021 course"],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "practical session. Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1Rw0Jp3dMCR9QXgF4pEkrNyif3rJyEWTV0r0N4ksAE9g/edit?tab=t.0"
+        },
+        {
+          "label": "Manufactured by CAMP",
+
+          "url": "https://www.climbing.com/skills/tricams-101-a-guide-to-using-this-tool"
+        }
+      ]
+    },
+    {
+      "id": "associations",
+      "title": "Associations",
+      "description": "Different associations have different standards they abide by and can be useful in comparison to our own.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "AMC",
+
+          "url": "https://www.outdoors.org"
+        },
+        {
+          "label": "PACI, Australia.",
+
+          "url": "https://www.paci.com.au"
+        },
+        {
+          "label": "UIAA, International Union Mountaineering Associations, Switzerland",
+
+          "url": "https://www.theuiaa.org"
+        }
+      ]
+    },
+    {
+      "id": "belaying",
+      "title": "Belaying & Belay Escape",
+      "description": "Principles and techniques of belaying, plus how to transfer, tie off and escape the belay system safely.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [
+        "Spring 2025 course",
+        "Spring 2024 course",
+        "Spring 2023 course",
+        "Spring 2021 course"
+      ],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Knots and belay escape.  Spring 2025 course.",
+
+          "url": "https://docs.google.com/document/d/1oR3WXHuulXIrfngMeiYeYFdsyg88DtxfHZz9FTdVsNk/edit?tab=t.0"
+        },
+        {
+          "label": "Knots and belay escape.  Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1oC8eTzPWuGQtekt6qtu9l2ezMrs0zQPLyrdc_aSyhzI/edit?tab=t.0"
+        },
+        {
+          "label": "Knots and belay escape.  Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1lFlkHFWH9NvO-SSn5afuqhpA5gNiSEPc_UArlwmd91E/edit?tab=t.0"
+        },
+        {
+          "label": "Knots and belay escape.  Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1WepqEDisIPESYM69RI4gkJQys0m87bjDBHhZvkFskLY/edit?tab=t.0"
+        },
+        {
+          "label": "Belaying.  Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1ZUzkPKd4yy9YiKWNh3Cfo7Fpj8HhSmRIixA46iAMkmE/edit?tab=t.0"
+        },
+        {
+          "label": "Alternate belay styles.  Spring 2021 course.",
+
+          "url": "https://drive.google.com/file/d/1BDWDke3aqK0CUI_P9h8s55xu5bFkUoBa/view"
+        },
+        {
+          "label": "Knots and belay escape.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/19ahWrMMC5KqgNsrKoHiRfVdvkhQ5jpY0JX5DqBvgewg/edit?tab=t.0#heading=h.tmscptaxdkbb"
+        },
+        {
+          "label": "Belay escape.  Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/1UtS_d3kJOgAzigwa4VDgtxybk9CmQmNk/view"
+        },
+        {
+          "label": "Belay escape.  Fall 2013-2 course.",
+
+          "url": "https://docs.google.com/document/d/1jMRn4--Rp869QJsB27kjChRfEj96cGmEDCBwKXBw_vw/pub"
+        },
+        {
+          "label": "CHECK, climbing commands.  Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/10p4tLNfLqyS0B0xxv9sZpe7Acsk4FlE_/view"
+        },
+        {
+          "label": "Youtube",
+
+          "url": "https://www.youtube.com/watch?v=39z_rElZGiU"
+        },
+        {
+          "label": "Youtube",
+
+          "url": "https://www.youtube.com/watch?v=4JtcxIQGKBs"
+        },
+        {
+          "label": "Youtube",
+
+          "url": "https://www.youtube.com/watch?v=a81LC0wjO0k"
+        },
+        {
+          "label": "Tying in, belaying.",
+
+          "url": "https://www.princeton.edu/~oa/climb/belaywal.shtml"
+        },
+        {
+          "label": "American Alpine Club",
+
+          "url": "https://americanalpineclub.org/universal-belay-program"
+        }
+      ]
+    },
+    {
+      "id": "bouldering",
+      "title": "Bouldering",
+      "description": "How to run a safe bouldering program for all age groups.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [
+        "Spring 2025 course",
+        "Spring 2024 course",
+        "Spring 2023 course",
+        "Spring 2021 course"
+      ],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1cT5wzMGhZCkN84Crt5AkTYe2YOnDtJtlbkLQkIDTQCQ/edit?tab=t.0"
+        },
+        {
+          "label": "Fall 2013-2 course",
+
+          "url": "https://docs.google.com/document/d/1BgwqmvcLiZflZQRsJacAmIHBL-lcbQlNUAVr6Ult3sU/edit?tab=t.0#heading=h.lta6olv3it0q"
+        }
+      ]
+    },
+    {
+      "id": "cope",
+      "title": "COPE",
+      "description": "Principles of COPE, challenge by choice and other topics.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [
+        "Spring 2025 course",
+        "Spring 2024 course",
+        "Spring 2023 course",
+        "Spring 2021 course"
+      ],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "HiCOPE, Lookout Rock operation. Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1kOoXEYuEsxV6jkmxmtqLhmblI3WeCrOuCLn1yoJcr1M/edit?tab=t.0"
+        },
+        {
+          "label": "Challenge by choice. Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/12KuvpRPXMtuE8cD4MNwDMFSxhsDofb9zTvEk9yTQ3oc/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        },
+        {
+          "label": "Initiative games. Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1w_1ko4fTQp_2-A2SivURGX7xaymFWgiBc30lXUjHKN8/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        },
+        {
+          "label": "What is it? Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1nOLxlt9DvwTtIpprdSVtz64aAkHymxQrtsxeplrw6fA/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        },
+        {
+          "label": "High course rescues.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1YhPTmHoFWKaftYqM9h6kEByV_JNKxnDsZAggYrvxnUM/edit?tab=t.0"
+        },
+        {
+          "label": "Initiative games.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1j6aXg8vVovD2K3vbN9ExbxZsI28b2z3UNNYUC0aj588/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        },
+        {
+          "label": "Sequencing.  Spring 2019 course",
+
+          "url": "https://docs.google.com/document/d/1yv8tiK2VdxKIyOjvcEiBh4_aN4InIqI0ZXH0Il2tz44/edit?tab=t.0"
+        },
+        {
+          "label": "General info.  Spring 2019 course",
+
+          "url": "https://docs.google.com/document/d/1QHqtNs_3iRdHcwhieuJ3zzMMrv2JbesxHSvaXZGAU60/edit?tab=t.0#heading=h.av1lfs5nuh3s"
+        },
+        {
+          "label": "Low COPE, trust activities.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1twxXK3SG4E3M_zbo6QJyPcmLGifv-KtiJ2cE-ls-QaM/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        }
+      ]
+    },
+    {
+      "id": "first_aid",
+      "title": "First Aid",
+      "description": "First aid relevant to climbing: how to prevent, prepare for and treat injuries.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [
+        "Spring 2025 course",
+        "Spring 2024 course",
+        "Spring 2023 course",
+        "Spring 2021 course"
+      ],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2019 course",
+
+          "url": "https://drive.google.com/file/d/1XhERu8tnJGjmUae3WoYpzoXYl44LXv0E/view"
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "title": "Hardware",
+      "description": "Hardware used in climbing systems, including inspection, maintenance and retirement guidelines.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/10Rd-N92pjlr0a73xHNYb5x3SI6W8N0PHQz8mYkemfnk/edit?tab=t.0#heading=h.av1lfs5nuh3s"
+        },
+        {
+          "label": "Spring 2021 course.",
+
+          "url": "https://drive.google.com/file/d/1rkI50DvvgIOjrKW4dlynaQm_5inoauR1/view"
+        },
+        {
+          "label": "Spring 2019 course",
+
+          "url": "https://docs.google.com/document/d/1j8HVLURVDG4vc0Krtg7EJY2LQATEVjcMX-jk4E9H5e0/edit?tab=t.0#heading=h.av1lfs5nuh3s"
+        },
+        {
+          "label": "Pulleys.  Spring 2018 course",
+
+          "url": "https://drive.google.com/file/d/1BbH2OUrfb1t53Ml_5LKD_-FL9jK4y5cR/view"
+        },
+        {
+          "label": "Winter 2013, Spring 2018 courses: tbd Lesson plan - ascenders",
+
+          "url": "https://drive.google.com/file/d/1KF3D7oV_LOc_mcl8XtDvxRLcHPpwsldT/view"
+        },
+        {
+          "label": "Analysis of many different systems.",
+
+          "url": "https://drive.google.com/open?id=0B2XGozW9HrCQbWQyVDA1blVQYWs"
+        }
+      ]
+    },
+    {
+      "id": "helmets_harnesses",
+      "title": "Helmets and Harnesses",
+      "description": "Proper selection, fitting, use and inspection of helmets and harnesses for climbing activities.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2025 course",
+
+          "url": "https://drive.google.com/file/d/1FBzX7TUL3Wbb12rq6w5zLAAgqtd-ZwKL/view"
+        },
+        {
+          "label": "Spring 2021 course",
+
+          "url": "https://drive.google.com/file/d/1x8y0QpwLPbxVwfCWUFHmPIqUo3ltWR5I/view"
+        },
+        {
+          "label": "Spring 2021 course",
+
+          "url": "https://drive.google.com/file/d/1jzq5iXnaCiL88yDI5QdeUYox94GAXqEl/view"
+        },
+        {
+          "label": "Winter 2013 course",
+
+          "url": "https://docs.google.com/document/d/1e5Aro4pD2JxXU4LwyJBiDrsXedQaWPtFD4ulaIAq9o8/pub"
+        },
+        {
+          "label": "PACI.  Avoiding crossloading of carabiners.",
+
+          "url": "https://www.paci.com.au/downloads_public/teachers/02_Protocols_rope-attach-methods.pdf"
+        }
+      ]
+    },
+    {
+      "id": "knots",
+      "title": "Knots",
+      "description": "Common climbing knots, their uses, and how to tie and inspect them correctly.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2021 course.",
+
+          "url": "https://drive.google.com/file/d/1PbczVKJRA-udiHf06rgXpZBmMlIEVTg9/view"
+        },
+        {
+          "label": "Friction knots.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1sp3-OG2ArtiOqSDvLDBEE1GzEEQgFAUWa5Vdyk6_ouw/edit?tab=t.0#heading=h.av1lfs5nuh3s"
+        },
+        {
+          "label": "Fall 2013-2, Spring 2018 courses",
+
+          "url": "https://drive.google.com/file/d/1iRRsRXH2_HjVZTSV9FS2FlOcyOCMaRUW/view"
+        },
+        {
+          "label": "Diagrams, many links. Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1Mm8bsLoVxVg1Gcs4sRJU-32tck6_Tleaav5w1wBPEiM/pub"
+        },
+        {
+          "label": "Large collection of knots with great animations of how to tie them.",
+
+          "url": "https://www.animatedknots.com"
+        },
+        {
+          "label": "Army Mountain Warfare Knot Guide - 15 basic",
+
+          "url": "https://www.benning.army.mil/infantry/amws/content/pdf/Knot%20Guide.pdf"
+        },
+        {
+          "label": "Knot board photo - Example knots.  Winter 2013 course.",
+
+          "url": "https://drive.google.com/file/d/1D6FyNJXp3t0afM2felhahJLgF3vsjSAV/view"
+        },
+        {
+          "label": "PACI bowline variants 64pp of bowline tying and analysis.  Password = copyright",
+
+          "url": "https://www.paci.com.au/downloads_public/knots/Bowlines_Analysis.pdf"
+        },
+        {
+          "label": "PACI knots - How-to's and knot analysis.",
+
+          "url": "https://www.paci.com.au/knots.php"
+        },
+        {
+          "label": "The Ashley Book of Knots - Clifford Ashley, 1944. Standard reference with over 4000 knots described.",
+
+          "url": "https://www.amazon.com/s?k=ashley+book+of+knots+by+clifford+w.+ashley&crid=2NALA3RRJKUGJ&sprefix=ashley+book+of+knots%2Caps%2C140&ref=nb_sb_ss_i_3_20"
+        }
+      ]
+    },
+    {
+      "id": "leave_no_trace",
+      "title": "Leave No Trace",
+      "description": "Principles of environmental stewardship and minimizing impact while running climbing and COPE programs.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2025 course.",
+
+          "url": "https://drive.google.com/file/d/1XBl_Q3NjX_6YTvjwa7LEzdVnDyhOpZlG/view"
+        }
+      ]
+    },
+    {
+      "id": "learning_teaching_styles",
+      "title": "Learning and Teaching Styles",
+      "description": "Different learning styles and teaching strategies to help instructors design effective COPE and climbing lessons.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Teaching and learning styles. Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/16crc-uaWhqlYY78Bs7YfqWJjqcNUGIfp77MPPP-25vA/edit?tab=t.0"
+        },
+        {
+          "label": "Challenging behaviors. Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1yV9v_vtJSfWZ6DzRkERqcWG3H_Dz_CiXweOO62f7KEw/edit?tab=t.0"
+        },
+        {
+          "label": "Teaching and learning styles.  June 2020 Pipsico course.",
+
+          "url": "https://docs.google.com/presentation/d/1FjfnPQ-JhdfUN7TYvNh_nWgAAxDAPXs15iHMkAUg2xE/edit?slide=id.p#slide=id.p"
+        },
+        {
+          "label": "Learning styles.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/presentation/d/1_R_uaU5GIabvecMSHRMokXaSTW5pUXivxtcxiMR4rJs/edit?slide=id.p#slide=id.p"
+        },
+        {
+          "label": "Disabilities and universal access.  Spring 2018 course.",
+
+          "url": "https://docs.google.com/document/d/1CcK4vZnaCBSy4rbL773yBnDxTSV1K51nkmOZxFfVI10/edit?tab=t.0"
+        },
+        {
+          "label": "Learning styles, multiple intelligences.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1mH0jtYvFZ6U7EY2NGWIixJC7ABxJeXnSyWKrhct3m-4/pub"
+        },
+        {
+          "label": "Climbing techniques.  Fall 2013-2 course.",
+
+          "url": "https://docs.google.com/document/d/15YYIPq2Wbi24qxqbI6re_TvYr4dLCPlXnnLkIJQ_2TU/pub"
+        }
+      ]
+    },
+    {
+      "id": "legal_liabilities_insurance",
+      "title": "Legal Liabilities & Insurance",
+      "description": "Understanding legal responsibilities, risk management and insurance coverage for COPE and climbing programs.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Legal liability.  Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1hCcJIi-a98E1B0mRDaDTtQtPUk7zFozATB4RpjZ2bmA/edit?tab=t.0"
+        },
+        {
+          "label": "Legal liability.  Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1IEuEACtqB5BBlU_ZO3eQTgDdtCFYZGKnzc8IoYuNhbw/edit?tab=t.0"
+        },
+        {
+          "label": "Legal liability.  Spring 2019, Spring 2021 course.",
+
+          "url": "https://drive.google.com/file/d/1bu7begj2Rjl9dxTjqkDmNeqvOBNUXRLW/view"
+        },
+        {
+          "label": "Legal liability.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1V7RvmcAlZF0KS1LBLVR7ZWQUXxpYxJZeI3wQeG_ZzZc/edit?tab=t.0#heading=h.gjdgxs"
+        },
+        {
+          "label": "Legal definitions.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/11Py5hgtU6QeUItcKiSJYnTTGq5uuLqb_aEu96QQCqWc/edit?tab=t.0#heading=h.gjdgxs"
+        },
+        {
+          "label": "BSA insurance - Provided through BSA National (includes some liability converage).",
+
+          "url": "https://www.scouting.org/health-and-safety/safety-moments/insurance"
+        },
+        {
+          "label": "PACI court cases - climbing related, and other sports",
+
+          "url": "https://www.paci.com.au/courts.php"
+        }
+      ]
+    },
+    {
+      "id": "plans_emergency_climb",
+      "title": "Plans (Emergency and Climb)",
+      "description": "Emergency action plans, climb plans and documentation to prepare for incidents and manage risk.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Emergency plans.  Spring 2025 course.",
+
+          "url": "https://drive.google.com/file/d/1lE5EnCohkCiXR83-TEU7rxhiw_8UYV0M/view"
+        },
+        {
+          "label": "Climbing plans.  Spring 2025 course.",
+
+          "url": "https://drive.google.com/file/d/1_TH1DbF800oak33tM_D8Zed8-NOVrBn8/view"
+        },
+        {
+          "label": "Site assessment.  Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/11q0EYwHjjSPPASqUGN5jkMLS5FRIkavBf75zHBkq13Y/edit?tab=t.0#heading=h.nj23sjpj5u97"
+        },
+        {
+          "label": "Site assessment.  Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1zUIcKFdEo1gl6q6LfyQ32uWccMg4vnU7SLgfhAUX8r4/edit?tab=t.0"
+        },
+        {
+          "label": "Emergency action plan.  Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/13xYxCM076bEnK31Ac2SdtdU4v6j0ZvNprfHWjFnEMaw/edit?tab=t.0#heading=h.ugph4dnl1svb"
+        },
+        {
+          "label": "Site assessment.  Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1l47EaozbARMqrssrRs8svyaxiZIxfrhvu_ti_eXABcU/edit?tab=t.0"
+        },
+        {
+          "label": "Emergency action plan.  Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1lZlA8gR-qxuphaY98KPeY6Cpohg6j2U12fse4KhUFXA/edit?tab=t.0#heading=h.ugph4dnl1svb"
+        },
+        {
+          "label": "Checking in/gear check.  Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1T0QzQx7FjO4J-Umx0ew0HHStQg0esWtyZP1o1KeaEpk/edit?tab=t.0#heading=h.av1lfs5nuh3s"
+        },
+        {
+          "label": "Emergency action plan.  Spring 2021 course.",
+
+          "url": "https://drive.google.com/file/d/1N296eKxA_9iP7GGkhsBcQDAZuO9MFcXH/view"
+        },
+        {
+          "label": "Site assessment, climb plan.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1i6eRmJtmVEkjqUTGv3CmMiuTOWibBb_b22diRbB3Xag/edit?tab=t.0#heading=h.79vigkpnj0zc"
+        },
+        {
+          "label": "Emergency action plan.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1UHMQAbPYosSCeZZUvScOzoipQcOmUk_f-3IWBJd76IQ/edit?tab=t.0#heading=h.ugph4dnl1svb"
+        },
+        {
+          "label": "Site assessment.  Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/1Tf2221l3imn1tNrydCRSNg_X7nA_TLaX/view"
+        },
+        {
+          "label": "Site assessment.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1pYWcf_g93hQ7QPaHSC_UaBR5kZpmn-JADZuNM0nWVbo/pub"
+        },
+        {
+          "label": "Emergency action plan and example climbing plan.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1nizweYTedW7W0nYBs4491GhowOOXJMYLOnk1IG1ypzA/pub"
+        },
+        {
+          "label": "Climbing plan example - For Quincy Quarries.  May copy and use as a template (Microsoft Word .doc).",
+
+          "url": "https://drive.google.com/file/d/1tEmR5Sj2QCRYqYrphptY_2NZHboBWLvz/view"
+        },
+        {
+          "label": "Learning Lessons from Hazardous Waste Site Operations",
+
+          "url": "https://docs.google.com/document/d/1gBPqj9Khc8xjQc0vPVzFU48zx1pE7e2GK55iO4nIgik/edit?tab=t.0#heading=h.pvn1tlwfzw4d"
+        }
+      ]
+    },
+    {
+      "id": "rappelling_releasable_rappel",
+      "title": "Rappelling & Releasable Rappel",
+      "description": "Rappelling techniques, systems and releasable setups for safely lowering or retrieving participants.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Releasable rappel.  Spring 2019 course.",
+
+          "url": "https://docs.google.com/document/d/1XO-tqyZ1JLBV47L5XxdJa0xz_tptdt4zGcxAbyQBOn4/edit?tab=t.0"
+        },
+        {
+          "label": "Releasable rappel.  Fall 2013-2 course.",
+
+          "url": "https://docs.google.com/document/d/1LMh7SuxGl0gLvDCn3kBPeI_BYsL7K_R4bpTf306I7x8/pub"
+        }
+      ]
+    },
+    {
+      "id": "ropes_webbing_cordage",
+      "title": "Ropes, Webbing, Cordage",
+      "description": "Types, properties, care and retirement of ropes, webbing and cordage used in climbing and COPE programs.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/15bsMnFxIlnPTm8Lp6YjKcaEJhx0WA3-5/edit"
+        },
+        {
+          "label": "Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/106lPMDQ33Ud1fXIpQLZtG3CffCmm3tEx/view"
+        },
+        {
+          "label": "Spring 2018 course",
+
+          "url": "https://drive.google.com/file/d/1Sfj07jlcs9m5taEe28CtxUCu7DAWkKfr/view"
+        },
+        {
+          "label": "Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1tqGSHiM3GRRkw2FvEBxN4viOZq-1k9GyZovUSWig9L0/pub"
+        }
+      ]
+    },
+    {
+      "id": "safety_redundancy",
+      "title": "Safety and Redundancy",
+      "description": "Core safety principles, redundancy in systems and practices to minimize risk in COPE and climbing programs.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Example situations. Spring 2023 course.",
+
+          "url": "https://drive.google.com/file/d/1SMFTmCaWdp9p0R0lGD1C_xZQjssbPhe5/view"
+        },
+        {
+          "label": "Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/1BK0qgRN9lWlGA4a9zaKfVVvo0h9oTsQ8/view"
+        },
+        {
+          "label": "High angle rescue, example situations.  Fall 2013-2, Spring 2018 courses.",
+
+          "url": "https://docs.google.com/document/d/1y0L263JbxAeYJOZI_BGRX6q-_KtqlZRgKz2GHxtWsH4/pub"
+        },
+        {
+          "label": "Safety flash cards - Made from Safety Chapter of BSA Topping Out manual, 2010 printing.",
+
+          "url": "https://quizlet.com/11525704/bsa-climbing-instructor-course-safety-flash-cards"
+        }
+      ]
+    },
+    {
+      "id": "standards_guidelines_record_keeping",
+      "title": "Standards, Guidelines, Record Keeping",
+      "description": "Relevant standards and guidelines plus templates and tools for documenting training, inspections and incidents.",
+      "lessonPlansLabel": "Lesson Plans",
+      "lessonPlans": [],
+      "extraLabel": "Additional Resources",
+      "resources": [
+        {
+          "label": "Standards. Spring 2025 course.",
+
+          "url": "https://docs.google.com/document/d/15wgoKu5bZIcsSlIEy4qIdbiTerLcRnaarTlAuk8v5pE/edit?tab=t.0"
+        },
+        {
+          "label": "Standards. Spring 2024 course.",
+
+          "url": "https://docs.google.com/document/d/1tmXlL7uQrGNytJfIwDwUIWyqis-Mn0Hkisgx8gN5aIE/edit?tab=t.0"
+        },
+        {
+          "label": "Standards. Spring 2023 course.",
+
+          "url": "https://docs.google.com/document/d/1gs6Y54LbFmaR_84MxWXi4z9UOHkFPVxTjMr7IAl8yP0/edit?tab=t.0"
+        },
+        {
+          "label": "Spring 2021 course",
+
+          "url": "https://docs.google.com/document/d/1NjshJj6AFIQQhj_caffdxaqN3-WFOk4G8E_KdolP664/edit?tab=t.0"
+        },
+        {
+          "label": "Inspection.  Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1bw4xJ3F-knWc4_8nClU6SLZqmKwFD2RdtqQzT2eh5i0/edit?tab=t.0"
+        },
+        {
+          "label": "Guide to Safe Scouting.  Spring 2021 course.",
+
+          "url": "https://docs.google.com/document/d/1VeyHWaQpZQlHgWKU9PS3H6YAWmMw6fajw0MG8eJgBWw/edit?tab=t.0"
+        },
+        {
+          "label": "Standards, record keeping. June 2020 Pipsico course.",
+
+          "url": "https://drive.google.com/file/d/1Inr0vFapTK7OCeuFAmc2yIhWpJTkatet/view"
+        },
+        {
+          "label": "Standards, record keeping.  Spring 2018 course.",
+
+          "url": "https://drive.google.com/file/d/1xwl2Il_vnpRqep1xMsIBUu_TKlk70mpG/view"
+        },
+        {
+          "label": "Record keeping.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1B6JzUbZD2DoUfrFMJz4pupwn_fR0HCzCNfFwXWdcbUs/pub"
+        },
+        {
+          "label": "Staffing.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1D8LYFdAf-Yt-mN0jk6MX6ND13-9_k6wiVzG2P8Hinbg/pub"
+        },
+        {
+          "label": "Standards.  Winter 2013 course.",
+
+          "url": "https://docs.google.com/document/d/1v9-MrwWfgND0_TABiiTYop6PjP-eFDd4sZjL2lFkXFQ/pub"
+        },
+        {
+          "label": "Gear tracking - Group gear spreadsheet",
+
+          "url": "https://drive.google.com/file/d/1Dy75Oz2HDWH9f623wKbr_YXiQpUKemuq/view"
+        },
+        {
+          "label": "Gear tracking - Example spreadsheet.",
+
+          "url": "https://docs.google.com/spreadsheets/d/1bBKvY8eFYvKZbVwnhc1Zt1NyAfHrshDUsNuZ5O_q_Vk/pub?output=html"
+        },
+        {
+          "label": "Staffing requirements chart - Winter 2013 course.",
+
+          "url": "https://docs.google.com/spreadsheets/d/1HVjCcFvM1mPPAJkDzL2dwFs4l_Jz81ejDqreNzlcxms/pub?output=html"
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "title": "Exam",
+    "intro": "The point of the exam is to help memorize and know where to find the standards, guidelines and best practices that we use in the instruction of climbing. You have unlimited attempts and are encouraged to use the resources on this site to aid you in finding the correct answer.",
+    "note": "If you are looking for the level 2 exam, please contact John Iler.",
+    "submitLabel": "Submit",
+    "questions": [
+      {
+        "id": 1,
+        "label": "Question 1",
+        "prompt": "How many kilonewtons must all anchors be able to support? Only give the raw number to the closest kN.",
+        "inputPlaceholder": "Answer"
+      },
+      {
+        "id": 2,
+        "label": "Question 2",
+        "prompt": "What is the maximum amount of participants a climbing instructor is allowed to have under their watch?",
+        "inputPlaceholder": "Answer"
+      },
+      {
+        "id": 3,
+        "label": "Question 3",
+        "prompt": "What is the minimum age a participant can be to participate in top-rope climbing?",
+        "inputPlaceholder": "Answer"
+      },
+      {
+        "id": 4,
+        "label": "Question 4",
+        "prompt": "What is the standard knot we use to anchor to a tree?",
+        "inputPlaceholder": "Answer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Class Topics – COPE & Climbing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-nav"></header>
+
+    <main class="container">
+      <h1>Class Topics</h1>
+      <p class="section-lead">
+        Explore lesson plans and additional resources for each topic in the COPE
+        & Climbing Instructor course.
+      </p>
+
+      <div id="topics-grid" class="topics-grid"></div>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script>
+      fetch("data.json")
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          var topics = data.topics || [];
+          var grid = document.getElementById("topics-grid");
+
+          topics.forEach(function (topic) {
+            var card = document.createElement("div");
+            card.className = "card";
+
+            var lessonHtml;
+            if (topic.lessonPlans && topic.lessonPlans.length > 0) {
+              lessonHtml = topic.lessonPlans.join("<br>");
+            } else {
+              lessonHtml = "No lesson plans listed yet.";
+            }
+
+            card.innerHTML =
+              "<h3>" +
+              topic.title +
+              "</h3>" +
+              "<p>" +
+              topic.description +
+              "</p>" +
+              '<div class="card-meta">' +
+              "<strong>" +
+              (topic.lessonPlansLabel || "Lesson Plans") +
+              "</strong><br>" +
+              lessonHtml +
+              "</div>" +
+              '<button class="btn ghost resources-btn">' +
+              (topic.extraLabel || "Additional Resources") +
+              "</button>";
+
+            card
+              .querySelector(".resources-btn")
+              .addEventListener("click", function () {
+                window.location.href =
+                  "resources.html?topic=" + encodeURIComponent(topic.id);
+              });
+
+            grid.appendChild(card);
+          });
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Standard Details – BSA COPE & Climbing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="main-nav"></header>
+
+    <main class="container">
+      <h1 id="standard-title">Standard Details</h1>
+      <p class="section-lead" id="standard-desc"></p>
+
+      <div id="standard-main-link"></div>
+
+      <div id="standard-extra"></div>
+
+      <button class="btn ghost" onclick="window.location.href='standards.html'">
+        ← Back to Standards & Guidelines
+      </button>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script>
+      var params = new URLSearchParams(window.location.search);
+      var standardId = params.get("standard");
+
+      fetch("data.json")
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          var standards = data.standards || [];
+          var standard = null;
+
+          for (var i = 0; i < standards.length; i++) {
+            if (standards[i].id === standardId) {
+              standard = standards[i];
+              break;
+            }
+          }
+
+          var titleEl = document.getElementById("standard-title");
+          var descEl = document.getElementById("standard-desc");
+          var mainLinkEl = document.getElementById("standard-main-link");
+
+          if (!standard) {
+            titleEl.textContent = "Standard not found";
+            descEl.textContent =
+              "Please go back to Standards & Guidelines and select a standard again.";
+            return;
+          }
+
+          titleEl.textContent = standard.title;
+          descEl.textContent = standard.description;
+
+          if (standard.link && standard.link !== "#") {
+            var btn = document.createElement("a");
+            btn.textContent = "Open Official Standard";
+            btn.href = standard.link;
+            btn.className = "btn primary";
+            btn.target = "_blank";
+            btn.rel = "noopener noreferrer";
+
+            mainLinkEl.appendChild(btn);
+          } else {
+            mainLinkEl.textContent =
+              "No external standard link has been added yet.";
+          }
+        });
+    </script>
+  </body>
+</html>
