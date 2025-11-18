@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Additional Resources – BSA COPE & Climbing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,7 +25,6 @@
 
     <script src="navbar.js"></script>
     <script>
-      // Debug: see exactly what URL we arrived with
       console.log("Full URL:", window.location.href);
       console.log("Search string:", window.location.search);
 
@@ -47,8 +47,7 @@
               return t.id;
             })
           );
-
-          // Normalize ids in data.json for comparison
+          concole.log(data);
           var topic =
             topics.find(function (t) {
               return (t.id || "").trim().toLowerCase() === topicId;
@@ -76,7 +75,6 @@
             return;
           }
 
-          // Build list of links
           var ul = document.createElement("ul");
 
           resources.forEach(function (r, index) {

@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>COPE & Climbing Instructor Training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e867f74e8d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="main-nav"></header>
@@ -22,7 +27,38 @@
           <a href="exam.html" class="btn ghost">Exam</a>
         </div>
       </section>
+      <div class="hero">
+        <h2>Have a question? Ask Mike!</h2>
+        <h5>
+          Mike is our very own chatbot who will answer your questions for you
+        </h5>
+        <div id="chat">
+          <p class="user-input">
+            Sample question: How many kilonewtowns does an anchor need to be?
+          </p>
+          <p class="bot-input">
+            An anchor must be capable of handling 22.2 kilonewtons (KN) or 5000
+            lbs.
+          </p>
+          <form id="ask-bot">
+            <textarea
+              type="text"
+              name="prompt"
+              placeholder="Your question here!"
+            ></textarea>
+            <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+          </form>
+        </div>
+      </div>
     </main>
+    <script>
+      const textarea = document.querySelector("textarea");
+      textarea.style.overflowY = "hidden"; // Hide scroll bar
+      textarea.addEventListener("input", () => {
+        textarea.style.height = "auto"; // Reset height to recalc
+        textarea.style.height = textarea.scrollHeight + "px"; // Set height based on scroll content
+      });
+    </script>
 
     <script src="navbar.js"></script>
     <script>
