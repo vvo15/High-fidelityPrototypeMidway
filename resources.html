@@ -24,8 +24,16 @@
 
     <script src="navbar.js"></script>
     <script>
+      // Debug: see exactly what URL we arrived with
+      console.log("Full URL:", window.location.href);
+      console.log("Search string:", window.location.search);
+
       var params = new URLSearchParams(window.location.search);
-      var topicId = params.get("topic");
+      var rawTopicId = params.get("topic") || "";
+      var topicId = rawTopicId.trim().toLowerCase();
+
+      console.log("topicId from URL (raw):", rawTopicId);
+      console.log("topicId after normalize:", topicId);
 
       fetch("data.json")
         .then(function (res) {
@@ -33,14 +41,18 @@
         })
         .then(function (data) {
           var topics = data.topics || [];
-          var topic = null;
+          console.log(
+            "All topic ids from data.json:",
+            topics.map(function (t) {
+              return t.id;
+            })
+          );
 
-          for (var i = 0; i < topics.length; i++) {
-            if (topics[i].id === topicId) {
-              topic = topics[i];
-              break;
-            }
-          }
+          // Normalize ids in data.json for comparison
+          var topic =
+            topics.find(function (t) {
+              return (t.id || "").trim().toLowerCase() === topicId;
+            }) || null;
 
           var titleEl = document.getElementById("topic-title");
           var descEl = document.getElementById("topic-desc");

@@ -9,65 +9,89 @@
     <header id="main-nav"></header>
 
     <main class="container">
-      <h1 id="standard-title">Standard Details</h1>
-      <p class="section-lead" id="standard-desc"></p>
+      <h1 id="standard-title">Standard</h1>
+      <p id="standard-description" class="section-lead"></p>
 
-      <div id="standard-main-link"></div>
+      <section>
+        <h2>Resources</h2>
+        <div id="standard-resources"></div>
+      </section>
 
-      <div id="standard-extra"></div>
-
-      <button class="btn ghost" onclick="window.location.href='standards.html'">
-        ← Back to Standards & Guidelines
-      </button>
+      <div style="margin-top: 2rem">
+        <a href="standards.html" class="btn ghost">
+          &larr; Back to Standards
+        </a>
+      </div>
     </main>
 
     <script src="navbar.js"></script>
     <script>
-      var params = new URLSearchParams(window.location.search);
-      var standardId = params.get("standard");
-
       fetch("data.json")
         .then(function (res) {
           return res.json();
         })
         .then(function (data) {
-          var standards = data.standards || [];
-          var standard = null;
+          var params = new URLSearchParams(window.location.search);
+          var id = params.get("standard");
 
-          for (var i = 0; i < standards.length; i++) {
-            if (standards[i].id === standardId) {
-              standard = standards[i];
-              break;
-            }
-          }
+          var standards = data.standards || [];
+          var standard = standards.find(function (s) {
+            return s.id === id;
+          });
 
           var titleEl = document.getElementById("standard-title");
-          var descEl = document.getElementById("standard-desc");
-          var mainLinkEl = document.getElementById("standard-main-link");
+          var descEl = document.getElementById("standard-description");
+          var resourcesContainer =
+            document.getElementById("standard-resources");
 
           if (!standard) {
             titleEl.textContent = "Standard not found";
             descEl.textContent =
-              "Please go back to Standards & Guidelines and select a standard again.";
+              "We couldn't find details for that standard. Please go back and try again.";
             return;
           }
 
           titleEl.textContent = standard.title;
           descEl.textContent = standard.description;
 
-          if (standard.link && standard.link !== "#") {
-            var btn = document.createElement("a");
-            btn.textContent = "Open Official Standard";
-            btn.href = standard.link;
-            btn.className = "btn primary";
-            btn.target = "_blank";
-            btn.rel = "noopener noreferrer";
+          if (
+            Array.isArray(standard.resources) &&
+            standard.resources.length > 0
+          ) {
+            var list = document.createElement("ul");
+            list.className = "resource-list";
 
-            mainLinkEl.appendChild(btn);
+            standard.resources.forEach(function (res) {
+              var li = document.createElement("li");
+              var a = document.createElement("a");
+              a.href = res.url;
+              a.target = "_blank";
+              a.rel = "noopener noreferrer";
+              a.textContent = res.label;
+              li.appendChild(a);
+              list.appendChild(li);
+            });
+
+            resourcesContainer.appendChild(list);
+          } else if (standard.link) {
+            var p = document.createElement("p");
+            var a = document.createElement("a");
+            a.href = standard.link;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = "Open standard";
+            p.appendChild(a);
+            resourcesContainer.appendChild(p);
           } else {
-            mainLinkEl.textContent =
-              "No external standard link has been added yet.";
+            resourcesContainer.textContent = "No resources listed yet.";
           }
+        })
+        .catch(function (err) {
+          console.error("Error loading standard details:", err);
+          document.getElementById("standard-title").textContent =
+            "Error loading standard";
+          document.getElementById("standard-description").textContent =
+            "There was a problem loading this standard's details.";
         });
     </script>
   </body>
