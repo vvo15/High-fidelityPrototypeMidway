@@ -1,0 +1,67 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var params = new URLSearchParams(window.location.search);
+  var topicId = params.get("topic");
+
+  var titleEl = document.getElementById("topic-title");
+  var descEl = document.getElementById("topic-desc");
+  var listEl = document.getElementById("resources-list");
+
+  if (!titleEl || !descEl || !listEl) return;
+
+  fetch("data.json")
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      var topics = data.topics || [];
+      var topic = null;
+
+      for (var i = 0; i < topics.length; i++) {
+        if (topics[i].id === topicId) {
+          topic = topics[i];
+          break;
+        }
+      }
+
+      if (!topic) {
+        titleEl.textContent = "Topic not found";
+        descEl.textContent =
+          "Please go back to Class Topics and choose a topic again.";
+        return;
+      }
+
+      titleEl.textContent = topic.title + " – Additional Resources";
+      descEl.textContent = topic.description;
+
+      var resources = topic.resources || [];
+
+      if (!resources.length) {
+        listEl.innerHTML =
+          "<p>No additional resources have been added yet.</p>";
+        return;
+      }
+
+      var ul = document.createElement("ul");
+
+      resources.forEach(function (r, index) {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+
+        a.href = r.url;
+        var text = r.label || "Resource " + (index + 1);
+        a.textContent = text;
+        a.title = r.url;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+
+      listEl.appendChild(ul);
+    })
+    .catch(function (err) {
+      console.error("Error loading data.json:", err);
+      listEl.textContent = "There was a problem loading the resources.";
+    });
+});

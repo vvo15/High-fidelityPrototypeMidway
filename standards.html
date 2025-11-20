@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Standards & Guidelines – BSA COPE & Climbing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,47 +18,7 @@
       <div id="standards-grid" class="card-grid"></div>
     </main>
 
-    <script src="navbar.js"></script>
-    <script src="navbar.js"></script>
-    <script>
-      fetch("data.json")
-        .then(function (res) {
-          return res.json();
-        })
-        .then(function (data) {
-          var standards = data.standards || [];
-          var container = document.getElementById("standards-grid");
-
-          standards.forEach(function (s) {
-            var card = document.createElement("div");
-            card.className = "card";
-
-            card.innerHTML =
-              "<h3>" +
-              s.title +
-              "</h3>" +
-              "<p>" +
-              s.description +
-              "</p>" +
-              '<button class="btn ghost standards-btn">' +
-              (s.buttonLabel || "Access the Standards") +
-              "</button>";
-
-            card
-              .querySelector(".standards-btn")
-              .addEventListener("click", function () {
-                window.location.href =
-                  "standardDetail.html?standard=" + encodeURIComponent(s.id);
-              });
-
-            container.appendChild(card);
-          });
-        })
-        .catch(function (err) {
-          console.error("Error loading data.json for standards:", err);
-          var container = document.getElementById("standards-grid");
-          container.textContent = "There was a problem loading the standards.";
-        });
-    </script>
+    <script src="src/components/navbar.js"></script>
+    <script src="src/components/standards.js"></script>
   </body>
 </html>

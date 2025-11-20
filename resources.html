@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Additional Resources – BSA COPE & Climbing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,85 +22,7 @@
       </button>
     </main>
 
-    <script src="navbar.js"></script>
-    <script>
-      console.log("Full URL:", window.location.href);
-      console.log("Search string:", window.location.search);
-
-      var params = new URLSearchParams(window.location.search);
-      var rawTopicId = params.get("topic") || "";
-      var topicId = rawTopicId.trim().toLowerCase();
-
-      console.log("topicId from URL (raw):", rawTopicId);
-      console.log("topicId after normalize:", topicId);
-
-      fetch("data.json")
-        .then(function (res) {
-          return res.json();
-        })
-        .then(function (data) {
-          var topics = data.topics || [];
-          console.log(
-            "All topic ids from data.json:",
-            topics.map(function (t) {
-              return t.id;
-            })
-          );
-          concole.log(data);
-          var topic =
-            topics.find(function (t) {
-              return (t.id || "").trim().toLowerCase() === topicId;
-            }) || null;
-
-          var titleEl = document.getElementById("topic-title");
-          var descEl = document.getElementById("topic-desc");
-          var listEl = document.getElementById("resources-list");
-
-          if (!topic) {
-            titleEl.textContent = "Topic not found";
-            descEl.textContent =
-              "Please go back to Class Topics and choose a topic again.";
-            return;
-          }
-
-          titleEl.textContent = topic.title + " – Additional Resources";
-          descEl.textContent = topic.description;
-
-          var resources = topic.resources || [];
-
-          if (!resources.length) {
-            listEl.innerHTML =
-              "<p>No additional resources have been added yet.</p>";
-            return;
-          }
-
-          var ul = document.createElement("ul");
-
-          resources.forEach(function (r, index) {
-            var li = document.createElement("li");
-            var a = document.createElement("a");
-
-            a.href = r.url;
-
-            var text = r.label || "Resource " + (index + 1);
-            a.textContent = text;
-
-            a.title = r.url;
-
-            a.target = "_blank";
-            a.rel = "noopener noreferrer";
-
-            li.appendChild(a);
-            ul.appendChild(li);
-          });
-
-          listEl.appendChild(ul);
-        })
-        .catch(function (err) {
-          console.error("Error loading data.json:", err);
-          var listEl = document.getElementById("resources-list");
-          listEl.textContent = "There was a problem loading the resources.";
-        });
-    </script>
+    <script src="src/components/navbar.js"></script>
+    <script src="src/components/resources.js"></script>
   </body>
 </html>

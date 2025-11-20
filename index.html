@@ -27,6 +27,7 @@
           <a href="exam.html" class="btn ghost">Exam</a>
         </div>
       </section>
+
       <div class="hero">
         <h2>Have a question? Ask Mike!</h2>
         <h5>
@@ -42,38 +43,18 @@
           </p>
           <form id="ask-bot">
             <textarea
-              type="text"
               name="prompt"
               placeholder="Your question here!"
             ></textarea>
-            <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+            <button type="submit">
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
           </form>
         </div>
       </div>
     </main>
-    <script>
-      const textarea = document.querySelector("textarea");
-      textarea.style.overflowY = "hidden"; // Hide scroll bar
-      textarea.addEventListener("input", () => {
-        textarea.style.height = "auto"; // Reset height to recalc
-        textarea.style.height = textarea.scrollHeight + "px"; // Set height based on scroll content
-      });
-    </script>
 
-    <script src="navbar.js"></script>
-    <script>
-      fetch("data.json")
-        .then(function (res) {
-          return res.json();
-        })
-        .then(function (data) {
-          if (data.site) {
-            var t = document.getElementById("site-title");
-            var tag = document.getElementById("site-tagline");
-            if (t) t.textContent = data.site.title;
-            if (tag) tag.textContent = data.site.tagline;
-          }
-        });
-    </script>
+    <script src="src/components/navbar.js"></script>
+    <script src="src/components/index.js"></script>
   </body>
 </html>

@@ -975,5 +975,48 @@
         "inputPlaceholder": "Answer"
       }
     ]
+  },
+  "maps": {
+    "title": "Maps and Directions",
+    "locations": [
+      {
+        "id": "camp_resolute",
+        "name": "Camp Resolute",
+        "note": "Site map",
+        "mapsQuery": "Camp Resolute, Massachusetts"
+      },
+      {
+        "id": "norfolk_sheriff_ropes",
+        "name": "Norfolk Sheriff\u2019s High Ropes Course",
+        "address": "2015 Washington Street, Braintree, MA"
+      },
+      {
+        "id": "new_england_base_camp",
+        "name": "New England Base Camp (Sayre)",
+        "address": "411 Unquity Road, Milton, MA"
+      },
+      {
+        "id": "quincy_quarries_address",
+        "name": "Quincy Quarries",
+        "address": "1 Ricciuti Drive, Quincy, MA"
+      },
+      {
+        "id": "quincy_quarries_map",
+        "name": "Quincy Quarries – Site Map",
+        "note": "Site map (wall lettering), from Boston Rocks.",
+        "fileUrl": "QuincyQuarriesSitemap.pdf"
+      },
+      {
+        "id": "rumney_rocks",
+        "name": "Rumney Rocks Day Use Area",
+        "address": "Buffalo Rd, Rumney, NH",
+        "directions": [
+          "I-93N, exit 26 (Rt 25)",
+          "Rt 25, 7.4 miles",
+          "Right at blinking light onto Main St, 0.7 miles",
+          "Left onto Buffalo Rd, 0.9 miles, on right"
+        ]
+      }
+    ]
   }
 }
