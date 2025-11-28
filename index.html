@@ -30,27 +30,15 @@
 
       <div class="hero">
         <h2>Have a question? Ask Mike!</h2>
-        <h5>
-          Mike is our very own chatbot who will answer your questions for you
-        </h5>
-        <div id="chat">
-          <p class="user-input">
-            Sample question: How many kilonewtowns does an anchor need to be?
-          </p>
-          <p class="bot-input">
-            An anchor must be capable of handling 22.2 kilonewtons (KN) or 5000
-            lbs.
-          </p>
-          <form id="ask-bot">
-            <textarea
-              name="prompt"
-              placeholder="Your question here!"
-            ></textarea>
-            <button type="submit">
-              <i class="fa-solid fa-arrow-up"></i>
-            </button>
-          </form>
-        </div>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+        <df-messenger
+          project-id="instructor-website"
+          agent-id="02c231d6-a041-4ee1-9677-c13442e619e3"
+          language-code="en"
+          max-query-length="-1"
+        >
+          <df-messenger-chat chat-title="Mike"> </df-messenger-chat>
+        </df-messenger>
       </div>
     </main>
 
