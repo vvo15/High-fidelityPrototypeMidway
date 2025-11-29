@@ -300,7 +300,8 @@ h1 {
   );
   --df-messenger-message-padding: 16px;
   --df-messenger-message-bot-background: #fff;
-  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-user-background: #0d2140;
+  --df-messenger-message-user-font-color: #fff;
   --df-messenger-message-border-radius: 16px;
   --df-messenger-message-bot-border-top-left-radius: 16px;
   --df-messenger-message-bot-stack-border-top-left-radius: 0;
